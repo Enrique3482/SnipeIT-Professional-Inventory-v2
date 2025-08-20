@@ -1,0 +1,154 @@
+{
+    "folders": [
+        {
+            "name": "SnipeIT Professional Inventory",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "powershell.codeFormatting.preset": "OTBS",
+        "powershell.scriptAnalysis.enable": true,
+        "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
+        "files.associations": {
+            "*.ps1": "powershell",
+            "*.psd1": "powershell",
+            "*.psm1": "powershell"
+        },
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "files.encoding": "utf8bom",
+        "files.eol": "\r\n"
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-vscode.powershell",
+            "ms-vscode.vscode-json",
+            "streetsidesoftware.code-spell-checker"
+        ]
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "🧪 Test Mode - Simulation",
+                "type": "shell",
+                "command": "powershell",
+                "args": [
+                    "-ExecutionPolicy", "Bypass",
+                    "-File", "${workspaceFolder}/Start-SnipeInventory.ps1",
+                    "-Mode", "Test",
+                    "-SimulateHardware",
+                    "-VerboseLogging"
+                ],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "🚀 Production Mode - Live",
+                "type": "shell",
+                "command": "powershell",
+                "args": [
+                    "-ExecutionPolicy", "Bypass",
+                    "-File", "${workspaceFolder}/Start-SnipeInventory.ps1",
+                    "-Mode", "Production",
+                    "-VerboseLogging"
+                ],
+                "group": "build",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "💬 Interactive Mode",
+                "type": "shell",
+                "command": "powershell",
+                "args": [
+                    "-ExecutionPolicy", "Bypass",
+                    "-File", "${workspaceFolder}/Start-SnipeInventory.ps1",
+                    "-Mode", "Interactive"
+                ],
+                "group": "build",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "📊 PSScriptAnalyzer - Code Analysis",
+                "type": "shell",
+                "command": "powershell",
+                "args": [
+                    "-Command",
+                    "Invoke-ScriptAnalyzer -Path '${workspaceFolder}' -Recurse -Severity Warning,Error"
+                ],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "📋 Show Configuration",
+                "type": "shell",
+                "command": "powershell",
+                "args": [
+                    "-Command",
+                    "Get-Content '${workspaceFolder}/SnipeConfig.json' | ConvertFrom-Json | ConvertTo-Json -Depth 10"
+                ],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            }
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Debug Test Mode",
+                "type": "PowerShell",
+                "request": "launch",
+                "script": "${workspaceFolder}/SnipeIT-Professional-Inventory.ps1",
+                "args": [
+                    "-TestMode",
+                    "-SimulateHardware",
+                    "-VerboseLogging"
+                ],
+                "cwd": "${workspaceFolder}"
+            },
+            {
+                "name": "Debug Production Mode",
+                "type": "PowerShell",
+                "request": "launch",
+                "script": "${workspaceFolder}/SnipeIT-Professional-Inventory.ps1",
+                "args": [
+                    "-VerboseLogging"
+                ],
+                "cwd": "${workspaceFolder}"
+            }
+        ]
+    }
+}

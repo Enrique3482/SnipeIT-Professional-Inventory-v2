@@ -1,0 +1,152 @@
+{
+    "SimulateHardware": {
+        "IsPresent": false
+    },
+    "TestMode": {
+        "IsPresent": false
+    },
+    "CustomFieldMapping": {
+        "_snipeit_mac_address_1": "MacAddress",
+        "_snipeit_user_photo_21": "UserPhotoPath",
+        "_snipeit_expected_checkin_26": "ExpectedCheckin",
+        "_snipeit_inventoryversion_12": "InventoryVersion",
+        "_snipeit_uuid_9": "UUID",
+        "_snipeit_installdate_14": "InstallationDate",
+        "_snipeit_checkout_status_24": "CheckoutStatus",
+        "_snipeit_last_checkout_25": "LastCheckout",
+        "_snipeit_screenshot_20": "ScreenshotPath",
+        "_snipeit_last_user_22": "LastUser",
+        "_snipeit_appliedupdates_17": "AppliedUpdates",
+        "_snipeit_ram_gb_5": "Memory",
+        "_snipeit_cpu_4": "Processor",
+        "_snipeit_ipaddress_18": "IPAddress",
+        "_snipeit_current_user_23": "CurrentUser",
+        "_snipeit_hardware_hash_7": "HardwareHash",
+        "_snipeit_os_version_2": "OperatingSystem",
+        "_snipeit_internalmediacount_11": "InternalMediaCount",
+        "_snipeit_windows_product_key_3": "LicenseKey",
+        "_snipeit_lastboot_16": "LastBoot",
+        "_snipeit_externalmediacount_19": "ExternalMediaCount",
+        "_snipeit_storage_summary_6": "Storage",
+        "_snipeit_osbuild_13": "OperatingSystemBuild",
+        "_snipeit_systemagedays_15": "SystemAgeDays"
+    },
+    "Performance": {
+        "MaxRetries": 3,
+        "BatchSize": 50,
+        "RetryDelay": 2,
+        "ApiTimeout": 60
+    },
+    "VerboseLogging": {
+        "IsPresent": true
+    },
+    "Snipe": {
+        "StatusInUse": {
+            "Color": "primary",
+            "Name": "In Verwendung",
+            "Type": "deployed"
+        },
+        "StatusDeployable": {
+            "Color": "success",
+            "Name": "Verfügbar",
+            "Type": "deployable"
+        },
+        "Url": "http://192.168.101.62/api/v1",
+        "StandardCategoryId": 1,
+        "Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTFmNzFkMzE5YWQ5NzBjNjg5YjBlMjU2YTU2YTEzYzJiMjk5NmI1ODRhZmUwMzdmNDM1ZjRkMDA2YmZhZDM5ODZhZDkwZGU1ZmI2YTIwMTciLCJpYXQiOjE3NTU2OTI3MDguMjQwNjQ3LCJuYmYiOjE3NTU2OTI3MDguMjQwNjQ4LCJleHAiOjIyMjkwNzgzMDguMjM4MDYsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.UfQN9gPiXvHKK4-FxrAO6ARzTDWptaGMYBAutQcr4zQtumCmwuSqyd0FJQMNjp7i6NXuIql4QngQY9m7mA9T-JyvWLXCncQueXA2mVC5nNS5vXawh4JFRJQ2ypdfyd44o21Acm4oettm4SrIlbuSPjv2jVfvaOl5zAqk6mvPnbZ68dp2ul4xu-cX6DnkXKFTIAvfK0AFey5FViGU4F_EMze_-qBIoweyGhZLZcdQb0_fbA0tAN5pCijngsHUHRLM4_zYJ9VNj2rnd9JRE6yyjb7cdpoiSt5ST_GLhw2kVikTZXL0jZETGzsFIl3tTAHX3JW7Z0K8ozc-kKgfcngSwyYfikKAbvZQGjvmUCxy0GK6DrDg92azvBY7Aqbinb32nm_W-R5FlsrPuEPPXd8ru5DroX_YtLwRGBRJF0PEysAOPPoVI8mmkI87-M30M80S360Uk1ahLXzilUXOuyJRvtYo1h0h-3fs2fA2dxpSI-iuphoGNguCb9NM_znNKzJhds9-bh0BjKettFJjk0-u4HCv34pczmUrK2GrQgjTCXuI4FAJ3pqR1s6jCQeydbZKXxhQ-yur9X6iKEqqfqz1ftfc66SE29lfMDz8_EP6wc-VJZiSAkTnGWeMHwrsPSV0tAb-u5R-2bwHbbfnoijatjVppEMjLOT4cwbz6Bl_o6Y",
+        "StandardModelFieldsetId": 2,
+        "StandardCompanyName": "Ihre Firma GmbH",
+        "StandardStatusName": "In Verwendung"
+    },
+    "Maintenance": {
+        "CriticalDays": 7,
+        "IntervalDays": 365,
+        "WarningDays": 30
+    },
+    "ManufacturerSupport": {
+        "Google": {
+            "Name": "Google Deutschland GmbH",
+            "SupportUrl": "https://support.google.com/",
+            "SupportPhone": "+49 89 3000 3000",
+            "SupportEmail": "support@google.de"
+        },
+        "Huawei": {
+            "Name": "Huawei Deutschland GmbH",
+            "SupportUrl": "https://consumer.huawei.com/de/support/",
+            "SupportPhone": "+49 89 31707000",
+            "SupportEmail": "support.de@huawei.com"
+        },
+        "Sony": {
+            "Name": "Sony Deutschland GmbH",
+            "SupportUrl": "https://www.sony.de/support",
+            "SupportPhone": "+49 180 5 773669",
+            "SupportEmail": "info@sony.de"
+        },
+        "Adobe": {
+            "Name": "Adobe Systems GmbH",
+            "SupportUrl": "https://helpx.adobe.com/de/",
+            "SupportPhone": "+49 89 4523 4523",
+            "SupportEmail": "support@adobe.de"
+        },
+        "Apple": {
+            "Name": "Apple Deutschland",
+            "SupportUrl": "https://support.apple.com/de-de",
+            "SupportPhone": "+49 89 27 22 77 00",
+            "SupportEmail": "support@apple.de"
+        },
+        "ASUS": {
+            "Name": "ASUS Deutschland GmbH",
+            "SupportUrl": "https://www.asus.com/de/support/",
+            "SupportPhone": "+49 2102 9599 555",
+            "SupportEmail": "support@asus.de"
+        },
+        "Avery": {
+            "Name": "Avery Dennison Deutschland GmbH",
+            "SupportUrl": "https://www.avery.de/support",
+            "SupportPhone": "+49 6103 4020",
+            "SupportEmail": "support@avery.de"
+        },
+        "Crucial": {
+            "Name": "Crucial Deutschland",
+            "SupportUrl": "https://www.crucial.de/support",
+            "SupportPhone": "+49 800 181 4791",
+            "SupportEmail": "support@crucial.de"
+        },
+        "Dell": {
+            "Name": "Dell Technologies Deutschland GmbH",
+            "SupportUrl": "https://www.dell.com/support/home/de-de",
+            "SupportPhone": "+49 69 9792 7200",
+            "SupportEmail": "tech_support_germany@dell.com"
+        },
+        "HP": {
+            "Name": "HP Deutschland GmbH",
+            "SupportUrl": "https://support.hp.com/de-de",
+            "SupportPhone": "+49 69 9530 7000",
+            "SupportEmail": "support@hp.de"
+        },
+        "Lenovo": {
+            "Name": "Lenovo Deutschland GmbH",
+            "SupportUrl": "https://support.lenovo.com/de/de",
+            "SupportPhone": "+49 711 6569 0333",
+            "SupportEmail": "support@lenovo.de"
+        },
+        "LG": {
+            "Name": "LG Electronics Deutschland GmbH",
+            "SupportUrl": "https://www.lg.com/de/support",
+            "SupportPhone": "+49 6196 934 1000",
+            "SupportEmail": "service-de@lge.com"
+        },
+        "Microsoft": {
+            "Name": "Microsoft Deutschland GmbH",
+            "SupportUrl": "https://support.microsoft.com/de-de",
+            "SupportPhone": "+49 89 3176 1000",
+            "SupportEmail": "support@microsoft.de"
+        },
+        "Samsung": {
+            "Name": "Samsung Electronics GmbH",
+            "SupportUrl": "https://www.samsung.com/de/support/",
+            "SupportPhone": "+49 6196 77 555",
+            "SupportEmail": "service@samsung.de"
+        }
+    }
+}
