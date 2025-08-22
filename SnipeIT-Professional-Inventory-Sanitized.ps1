@@ -101,7 +101,7 @@ $script:Configuration = @{
     # Test mode uses these settings only for validation - no actual API calls are made
     Snipe = @{
         Url = "http://YOUR_SNIPEIT_SERVER_IP/api/v1"  # Your SnipeIT API URL
-        Token = "YOUR_API_TOKEN_HERE.YOUR_API_TOKEN_HERE.Knl8zZ69SEYcfkYuU3TUOwr-JKtSKx1-zZYdFXOUwljuPXTlzb4-4dsdVDnjoEaJm3-dLK02CRJiNgUyBmkbAmb-c0dlpfYqs-8wl-UTO7qMZytGnUJzGNCV628hnKda7LL_pxrEDr1Pcnzef9A9MR0jOxCyyEi5mte3yau330wAqkTIn5adJMy7wMyLktLc6NyBNjrPImxK_2rJ8XZzAoGuz8tMlJqQQSZNST7zmYWRhRnTSLmd2nU7xaIosboLfuEtnPuXtHK_jcf-3Sd8zte6ZFutRjCXR3_S-3lJB_9y-CaxOeAHjPASD3Isu3z0M-URQsmrdzS5Lzg4mz12AtB-Zf_oke44o9ghUFWx5y-75qQZ_KV3FPCu3kjoM9sHCmOOzqD9h_ns2754EtdAOGtApAznqkUMFNffR3sJdt33jZWPAVq72Yjm7D-BnJuLU6EgH4qBHT6BeKs-o1pRjQIb5-Buf-p7ogw6jwBDAoTWuQjBmggZvPqjFt0e9gMwKq-gzkx5wgoxZ5dCK0OACNNfAt15csE9w3PiaPTo93YTkRmEZZp4BZGNzg95lX8ezhN-wUET86wVjiRdPxlw-R4KJNeT9psa_xSFxQpkjoGLd7TdtyY8iioKZmTgRC_SWtqjoI6IKkQh8SbmZHSGpDKRZrczANstY0R01qfI7YE"  # Your SnipeIT API Token
+        Token = "YOUR_API_TOKEN_HERE.YOUR_API_TOKEN_HERE."  # Your SnipeIT API Token
         StandardCompanyName = $CustomerName
         StandardStatusName = "In Use"
         StandardModelFieldsetId = 2  # Computer Standard Fieldset
